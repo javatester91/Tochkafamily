@@ -1,12 +1,6 @@
-﻿using NUnit.Framework;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace UI_test.PageObjects
 {
@@ -77,7 +71,7 @@ namespace UI_test.PageObjects
 
         public JobPage JobPageConfirmAgrement()
         {
-            _webDriver.FindElement(CheckBox).Click(); 
+            _webDriver.FindElement(CheckBox).Click();
             return this;
         }
 
