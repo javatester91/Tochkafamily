@@ -1,10 +1,4 @@
-﻿using NUnit.Framework;
-using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using OpenQA.Selenium;
 
 namespace UI_test.PageObjects
 {
@@ -20,11 +14,12 @@ namespace UI_test.PageObjects
         private readonly By _menuEventsLink = By.XPath("//ul//li[5]//a");
         private readonly By _menuMapLink = By.XPath("//ul//li[6]//a");
         private readonly By _menuContactsLink = By.XPath("//li[@class='last leaf']//a");
-        
+
         public MainPage(IWebDriver webDriver)
         {
             _webDriver = webDriver;
         }
+
 
         public void MenuFranshizaLinkClick()
         {

@@ -1,13 +1,14 @@
-global using NUnit.Framework;
-using OpenQA.Selenium;
 using UI_test.PageObjects;
 
 namespace UI_test
 {
+    [TestFixture]
+    [Description("Проверка работы ссылок Menu")]
     public class TestMenuLinks : Base
     {
 
         [Test]
+        [Description("Проверка работы ссылки Франшиза")]
         public void TestMenuFranshizaLink()
         {
             var mainPage = new MainPage(driver);
@@ -19,6 +20,7 @@ namespace UI_test
         }
 
         [Test]
+        [Description("Проверка работы ссылки Работа")]
         public void TestMenuJobLink()
         {
             var mainPage = new MainPage(driver);
@@ -30,6 +32,7 @@ namespace UI_test
         }
 
         [Test]
+        [Description("Проверка работы ссылки Обучение")]
         public void TestMenuEducationLink()
         {
             var mainPage = new MainPage(driver);
@@ -41,6 +44,7 @@ namespace UI_test
         }
 
         [Test]
+        [Description("Проверка работы ссылки Продукция")]
         public void TestMenuProductsLink()
         {
             var mainPage = new MainPage(driver);
@@ -52,6 +56,7 @@ namespace UI_test
         }
 
         [Test]
+        [Description("Проверка работы ссылки Мероприятия")]
         public void TestMenuEventsLink()
         {
             var mainPage = new MainPage(driver);
@@ -63,6 +68,7 @@ namespace UI_test
         }
 
         [Test]
+        [Description("Проверка работы ссылки Карта салонов")]
         public void TestMenuMapLink()
         {
             var mainPage = new MainPage(driver);
@@ -74,6 +80,7 @@ namespace UI_test
         }
 
         [Test]
+        [Description("Проверка работы ссылки Контакты")]
         public void TestMenuContactsLink()
         {
             var mainPage = new MainPage(driver);
