@@ -16,7 +16,7 @@ namespace UI_test
                 .MenuFranshizaLinkClick();
 
             string getUrl = driver.Url;
-            Assert.AreEqual("https://fr-tochkafamily.ru/", getUrl);
+            Assert.That("https://fr-tochkafamily.ru/", Is.EqualTo( getUrl));
         }
 
         [Test]
@@ -28,7 +28,7 @@ namespace UI_test
                 .MenuJobLinkClick();
 
             string getUrl = driver.Url;
-            Assert.AreEqual("https://tochkafamily.ru/content/rabota-v-tochke-krasoty", getUrl);
+            Assert.That("https://tochkafamily.ru/content/rabota-v-tochke-krasoty", Is.EqualTo(getUrl));
         }
 
         [Test]
@@ -40,7 +40,7 @@ namespace UI_test
                 .MenuEducationLinkClick();
 
             string getUrl = driver.Url;
-            Assert.AreEqual("https://mone-academy.ru/", getUrl);
+            Assert.That("https://mone-academy.ru/", Is.EqualTo(getUrl));
         }
 
         [Test]
@@ -52,7 +52,7 @@ namespace UI_test
                 .MenuProductsLinkClick();
 
             string getUrl = driver.Url;
-            Assert.AreEqual("https://moneprofessional.ru/", getUrl);
+            Assert.That("https://moneprofessional.ru/", Is.EqualTo(getUrl));
         }
 
         [Test]
@@ -64,7 +64,7 @@ namespace UI_test
                 .MenuEventsLinkClick();
 
             string getUrl = driver.Url;
-            Assert.AreEqual("https://tochkafamily.ru/events", getUrl);
+            Assert.That("https://tochkafamily.ru/events", Is.EqualTo(getUrl));
         }
 
         [Test]
@@ -76,7 +76,7 @@ namespace UI_test
                 .MenuMapLinkClick();
 
             string getUrl = driver.Url;
-            Assert.AreEqual("https://tochkafamily.ru/#block-block-34", getUrl);
+            Assert.That("https://tochkafamily.ru/#block-block-34", Is.EqualTo(getUrl));
         }
 
         [Test]
@@ -88,7 +88,7 @@ namespace UI_test
                 .MenuContactsLinkClick();
 
             string getUrl = driver.Url;
-            Assert.AreEqual("https://tochkafamily.ru/content/kontakty", getUrl);
+            Assert.That("https://tochkafamily.ru/content/kontakty", Is.EqualTo(getUrl));
         }
     }
 }

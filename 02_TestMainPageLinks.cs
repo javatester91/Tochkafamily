@@ -18,7 +18,7 @@ namespace UI_test
             driver.SwitchTo().Window(driver.WindowHandles[1]);
             Thread.Sleep(2000);
             string getUrl = driver.Url;
-            Assert.AreEqual("https://fr-tochkafamily.ru/", getUrl);
+            Assert.That("https://fr-tochkafamily.ru/", Is.EqualTo(getUrl));
             driver.Quit();
         }
 
@@ -34,7 +34,7 @@ namespace UI_test
             driver.SwitchTo().Window(driver.WindowHandles[1]);
             Thread.Sleep(2000);
             string getUrl = driver.Url;
-            Assert.AreEqual("https://fr-tochkafamily.ru/", getUrl);
+            Assert.That("https://fr-tochkafamily.ru/", Is.EqualTo(getUrl));
             driver.Quit();
         }
 
@@ -48,7 +48,7 @@ namespace UI_test
             .ClickLinkWorkWithUs();
 
             string getUrl = driver.Url;
-            Assert.AreEqual("https://tochkafamily.ru/content/rabota-v-tochke-krasoty", getUrl);
+            Assert.That("https://tochkafamily.ru/content/rabota-v-tochke-krasoty", Is.EqualTo(getUrl));
         }
 
         [Test]
@@ -76,23 +76,8 @@ namespace UI_test
             driver.SwitchTo().Window(driver.WindowHandles[1]);
             Thread.Sleep(2000);
             string getUrl = driver.Url;
-            Assert.AreEqual("https://moneprofessional.ru/", getUrl);
+            Assert.That("https://moneprofessional.ru/", Is.EqualTo(getUrl));
             driver.Quit();
-        }
-
-        [Test]
-        [Description("Проверка работы ссылки Запись")]
-        public void Test5()
-        {
-            var mainPage = new MainPage(driver);
-            mainPage
-            .ClickRecord();
-
-            //driver.SwitchTo().Window(driver.WindowHandles[1]);
-            //Thread.Sleep(2000);
-            //string getUrl = driver.Url;
-            //Assert.AreEqual("https://moneprofessional.ru/", getUrl);
-            //driver.Quit();
         }
     }
 }
