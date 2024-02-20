@@ -147,7 +147,7 @@ namespace UI_test.PageObjects
             Thread.Sleep(2000);
         }
 
-        // Клик на ссылку Учись с нами
+        // Клик на ссылку Каталог
         public void ClickLinkCatalog()
         {
             _webDriver.FindElement(link_Catalog).Click();

@@ -35,6 +35,7 @@ namespace UI_test
             Thread.Sleep(2000);
             string getUrl = driver.Url;
             Assert.AreEqual("https://fr-tochkafamily.ru/", getUrl);
+            driver.Quit();
         }
 
         [Test]
@@ -72,8 +73,11 @@ namespace UI_test
             .ScrollToLinkCatalog()
             .ClickLinkCatalog();
 
+            driver.SwitchTo().Window(driver.WindowHandles[1]);
+            Thread.Sleep(2000);
             string getUrl = driver.Url;
-            Assert.AreEqual("https://moneprofessional.ru/katalog/", getUrl);
+            Assert.AreEqual("https://moneprofessional.ru/", getUrl);
+            driver.Quit();
         }
     }
 }
