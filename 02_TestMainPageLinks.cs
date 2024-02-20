@@ -79,5 +79,20 @@ namespace UI_test
             Assert.AreEqual("https://moneprofessional.ru/", getUrl);
             driver.Quit();
         }
+
+        [Test]
+        [Description("Проверка работы ссылки Запись")]
+        public void Test5()
+        {
+            var mainPage = new MainPage(driver);
+            mainPage
+            .ClickRecord();
+
+            //driver.SwitchTo().Window(driver.WindowHandles[1]);
+            //Thread.Sleep(2000);
+            //string getUrl = driver.Url;
+            //Assert.AreEqual("https://moneprofessional.ru/", getUrl);
+            //driver.Quit();
+        }
     }
 }

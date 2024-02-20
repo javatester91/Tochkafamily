@@ -24,7 +24,10 @@ namespace UI_test.PageObjects
         private readonly By link_learnWithUs = By.XPath("//span[contains(text(), 'Учись с нами')]");
 
         private readonly By link_Catalog = By.Id("moneprof_footer");
+
+        private readonly By RecordLink = By.XPath("//a[@class='btn h_btn js--y-widget-link']");
         
+
         public MainPage(IWebDriver webDriver)
         {
             _webDriver = webDriver;
@@ -152,6 +155,14 @@ namespace UI_test.PageObjects
         {
             _webDriver.FindElement(link_Catalog).Click();
             Thread.Sleep(2000);
+        }
+
+        // Клик на ссылку Каталог
+        public MainPage ClickRecord()
+        {
+            _webDriver.FindElement(RecordLink).Click();
+            Thread.Sleep(4000);
+            return new MainPage(_webDriver);
         }
     }
 }
