@@ -4,8 +4,6 @@ using OpenQA.Selenium.Support.UI;
 
 namespace UI_test.PageObjects
 {
-
-
     class JobPage
     {
         private IWebDriver _webDriver;

@@ -25,6 +25,5 @@ namespace UI_test
                 .JobPageSendForm()
                 .JobPageCheckSuccessSendForm();
         }
-
     }
 }
