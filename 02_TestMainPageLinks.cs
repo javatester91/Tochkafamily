@@ -61,7 +61,7 @@ namespace UI_test
             .ClickLinkLearnWithUs();
 
             string getUrl = driver.Url;
-            Assert.AreEqual("https://mone-academy.ru/", getUrl);
+            Assert.That("https://mone-academy.ru/", Is.EqualTo(getUrl));
         }
 
         [Test]
@@ -78,6 +78,18 @@ namespace UI_test
             string getUrl = driver.Url;
             Assert.That("https://moneprofessional.ru/", Is.EqualTo(getUrl));
             driver.Quit();
+        }
+
+        [Test]
+        [Description("Проверка работы ссылки Каталог товаров")]
+        public void Test5()
+        {
+            var mainPage = new MainPage(driver);
+            mainPage
+                .ClickRecord()
+                .BlockCityClick()
+                .InputFilial()
+                .ChooseFilial();
         }
     }
 }

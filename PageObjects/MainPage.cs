@@ -145,11 +145,12 @@ namespace UI_test.PageObjects
             _webDriver.FindElement(link_Catalog).Click();
         }
 
-        // Клик на ссылку Каталог
-        public MainPage ClickRecord()
+        // Клик на ссылку Записаться Online
+        public MainPageRecordOnLine ClickRecord()
         {
             _webDriver.FindElement(RecordLink).Click();
-            return new MainPage(_webDriver);
+            _webDriver.SwitchTo().Frame(0);
+            return new MainPageRecordOnLine(_webDriver);
         }
     }
 }
