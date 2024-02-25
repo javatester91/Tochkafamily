@@ -89,7 +89,12 @@ namespace UI_test
                 .ClickRecord()
                 .BlockCityClick()
                 .InputFilial()
-                .ChooseFilial();
+                .ChooseFilial()
+                .ChooseSpecialists()
+                .ClickBack()
+                .ChooseDate()
+                .ClickBack()
+                .ChooseService();
         }
     }
 }

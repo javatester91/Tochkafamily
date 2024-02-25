@@ -8,6 +8,7 @@ namespace UI_test
     {
         public IWebDriver driver;
 
+
         [SetUp]
         public void Setup()
         {
@@ -15,7 +16,6 @@ namespace UI_test
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             driver.Manage().Window.Maximize();
             driver.Navigate().GoToUrl("https://tochkafamily.ru/");
-            
         }
 
 
